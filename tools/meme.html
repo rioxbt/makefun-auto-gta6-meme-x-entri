@@ -1,0 +1,176 @@
+<!doctype html>
+<!--
+  The meme for make.fun's "Post a GTA 6 meme on X" bounty, authored as one page and rendered to meme.png by
+  tools/render-meme.sh (headless Chromium, 1080x1080, deterministic — no random values, no network, no webfonts).
+
+  The scene is Vice City at sunset, in make.fun's own magenta: the sun, the skyline, the palms, and the ghost of
+  make.fun's logo standing in the middle of it — the mascot worked into the scene, never pasted on as a sticker.
+  The ghost's paths are make.fun's own press asset (https://make.fun/press/mark.svg, kept beside this file in
+  assets/press/), inlined here so the render needs no network. The caption is drawn as SVG text with a heavy
+  outline, sized to still read when the picture is shrunk to 480x480 for the judge.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>make.fun · GTA 6 meme</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #12042a; }
+  svg { display: block; }
+  .cap { font-family: "Liberation Sans", "DejaVu Sans", Arial, Helvetica, sans-serif; font-weight: 900; }
+</style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"    stop-color="#12042a"/>
+      <stop offset="0.34" stop-color="#3d0f57"/>
+      <stop offset="0.58" stop-color="#8c1466"/>
+      <stop offset="0.74" stop-color="#ff2e88"/>
+      <stop offset="0.88" stop-color="#ff7a3d"/>
+      <stop offset="1"    stop-color="#ffd07a"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff6d8"/>
+      <stop offset="0.45" stop-color="#ffd166"/>
+      <stop offset="1" stop-color="#ff2e88"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"   stop-color="#5c0f57"/>
+      <stop offset="0.35" stop-color="#2a0630"/>
+      <stop offset="1"   stop-color="#0d0318"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0"   stop-color="#ff2e88" stop-opacity="0.55"/>
+      <stop offset="0.6" stop-color="#ff2e88" stop-opacity="0.16"/>
+      <stop offset="1"   stop-color="#ff2e88" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="sunmask">
+      <circle cx="540" cy="560" r="230" fill="#fff"/>
+      <g fill="#000">
+        <rect x="290" y="548" width="500" height="7"/>
+        <rect x="290" y="576" width="500" height="11"/>
+        <rect x="290" y="608" width="500" height="16"/>
+        <rect x="290" y="644" width="500" height="22"/>
+        <rect x="290" y="684" width="500" height="29"/>
+        <rect x="290" y="728" width="500" height="38"/>
+        <rect x="290" y="778" width="500" height="60"/>
+      </g>
+    </mask>
+  </defs>
+
+  <!-- sky, sun and its bloom -->
+  <rect x="0" y="0" width="1080" height="880" fill="url(#sky)"/>
+  <circle cx="540" cy="600" r="430" fill="url(#glow)"/>
+  <circle cx="540" cy="560" r="230" fill="url(#sun)" mask="url(#sunmask)"/>
+
+  <!-- a few stars, high where the sky is darkest -->
+  <g fill="#ffffff">
+    <circle cx="118" cy="112" r="2.4" opacity="0.85"/>
+    <circle cx="246" cy="64"  r="1.8" opacity="0.6"/>
+    <circle cx="842" cy="96"  r="2.2" opacity="0.8"/>
+    <circle cx="946" cy="186" r="1.7" opacity="0.55"/>
+    <circle cx="386" cy="150" r="1.6" opacity="0.5"/>
+    <circle cx="690" cy="56"  r="1.9" opacity="0.65"/>
+  </g>
+
+  <!-- Leonida skyline on the horizon: dark purple, magenta windows -->
+  <g fill="#2a0b3d">
+    <rect x="0"   y="716" width="96"  height="164"/>
+    <rect x="96"  y="742" width="58"  height="138"/>
+    <rect x="154" y="676" width="74"  height="204"/>
+    <rect x="228" y="726" width="52"  height="154"/>
+    <rect x="280" y="700" width="88"  height="180"/>
+    <rect x="368" y="748" width="60"  height="132"/>
+    <rect x="428" y="688" width="70"  height="192"/>
+    <rect x="498" y="734" width="54"  height="146"/>
+    <rect x="552" y="706" width="86"  height="174"/>
+    <rect x="638" y="752" width="56"  height="128"/>
+    <rect x="694" y="682" width="78"  height="198"/>
+    <rect x="772" y="728" width="56"  height="152"/>
+    <rect x="828" y="704" width="80"  height="176"/>
+    <rect x="908" y="740" width="58"  height="140"/>
+    <rect x="966" y="712" width="114" height="168"/>
+  </g>
+  <g fill="#ff8ad0">
+    <rect x="176" y="700" width="8" height="10"/><rect x="196" y="700" width="8" height="10"/>
+    <rect x="176" y="724" width="8" height="10"/><rect x="210" y="748" width="8" height="10"/>
+    <rect x="300" y="722" width="8" height="10"/><rect x="322" y="746" width="8" height="10"/>
+    <rect x="340" y="722" width="8" height="10"/><rect x="322" y="700" width="8" height="10"/>
+    <rect x="448" y="712" width="8" height="10"/><rect x="470" y="736" width="8" height="10"/>
+    <rect x="448" y="760" width="8" height="10"/>
+    <rect x="574" y="730" width="8" height="10"/><rect x="596" y="754" width="8" height="10"/>
+    <rect x="714" y="706" width="8" height="10"/><rect x="736" y="730" width="8" height="10"/>
+    <rect x="714" y="754" width="8" height="10"/>
+    <rect x="848" y="728" width="8" height="10"/><rect x="870" y="752" width="8" height="10"/>
+    <rect x="990" y="736" width="8" height="10"/><rect x="1012" y="760" width="8" height="10"/>
+  </g>
+
+  <!-- water, with the sun's magenta reflection running down it -->
+  <rect x="0" y="780" width="1080" height="300" fill="url(#water)"/>
+  <g fill="#ff2e88">
+    <rect x="470" y="792" width="150" height="4" opacity="0.55"/>
+    <rect x="492" y="812" width="110" height="4" opacity="0.42"/>
+    <rect x="452" y="836" width="180" height="5" opacity="0.34"/>
+    <rect x="500" y="866" width="96"  height="4" opacity="0.26"/>
+    <rect x="430" y="900" width="220" height="6" opacity="0.2"/>
+    <rect x="512" y="944" width="72"  height="4" opacity="0.15"/>
+  </g>
+
+  <!-- palms: silhouettes either side, framing the ghost -->
+  <g fill="#150420">
+    <g transform="translate(140 780)">
+      <path d="M0 0 C -6 -60, 4 -140, 16 -216 L 30 -214 C 20 -138, 12 -58, 16 0 Z"/>
+      <path d="M22 -214 C 60 -262, 132 -286, 196 -272 C 150 -258, 112 -240, 70 -206 Z"/>
+      <path d="M22 -214 C 60 -206, 128 -196, 178 -172 C 128 -186, 74 -190, 34 -190 Z"/>
+      <path d="M22 -214 C -22 -252, -84 -266, -140 -246 C -96 -238, -56 -220, -14 -192 Z"/>
+      <path d="M22 -214 C -14 -206, -62 -186, -88 -156 C -56 -174, -12 -188, 22 -190 Z"/>
+      <path d="M22 -214 C 40 -272, 34 -318, 6 -352 C 22 -312, 24 -262, 18 -216 Z"/>
+      <path d="M22 -214 C 76 -238, 150 -240, 206 -216 C 152 -212, 92 -206, 40 -190 Z" opacity="0.9"/>
+    </g>
+    <g transform="translate(940 780) scale(-1 1)">
+      <path d="M0 0 C -6 -68, 6 -160, 18 -246 L 34 -244 C 22 -158, 14 -66, 18 0 Z"/>
+      <path d="M26 -244 C 68 -298, 148 -324, 220 -308 C 168 -292, 126 -272, 78 -234 Z"/>
+      <path d="M26 -244 C 68 -234, 144 -222, 200 -196 C 144 -212, 84 -216, 38 -216 Z"/>
+      <path d="M26 -244 C -24 -286, -94 -302, -156 -280 C -108 -270, -62 -250, -16 -218 Z"/>
+      <path d="M26 -244 C -16 -234, -70 -212, -100 -178 C -64 -198, -14 -214, 26 -216 Z"/>
+      <path d="M26 -244 C 46 -308, 38 -358, 8 -396 C 26 -352, 28 -296, 22 -246 Z"/>
+    </g>
+  </g>
+
+  <!-- make.fun's ghost, from the press kit's mark.svg, standing in the middle of the scene -->
+  <g transform="translate(177.5 294.7) scale(20.83)">
+    <g transform="translate(3.858 3.202) scale(0.79)">
+      <path d="M6.2 13a8.2 8.2 0 0 1 16.4 0v4.6c1 .2 1.8.8 2 2-.2 1.2-1 1.9-2 2.2V25a2.6 2.6 0 0 1-2.6 2.6c-2 0-4.6 0-5.7-.7-1.1.7-3.7.7-5.5.7A2.6 2.6 0 0 1 6.2 25v-.7c-1.2.3-3.5.1-3.6-1.9-.1-2.1 1.3-4.8 3.6-6.2z" fill="#191419" stroke="#191419" stroke-width="3.4" stroke-linejoin="round"/>
+      <path d="M6.2 13a8.2 8.2 0 0 1 16.4 0v4.6c1 .2 1.8.8 2 2-.2 1.2-1 1.9-2 2.2V25a2.6 2.6 0 0 1-2.6 2.6c-2 0-4.6 0-5.7-.7-1.1.7-3.7.7-5.5.7A2.6 2.6 0 0 1 6.2 25v-.7c-1.2.3-3.5.1-3.6-1.9-.1-2.1 1.3-4.8 3.6-6.2z" fill="#ffffff"/>
+      <path d="M6.3 24.1v-2.5m8 5.8v-1.5" fill="none" stroke="#191419" stroke-width="1.25" stroke-linecap="round"/>
+      <path d="M13.2 10.6Q13.632 11.968 15 12.4Q13.632 12.832 13.2 14.2Q12.768 12.832 11.4 12.4Q12.768 11.968 13.2 10.6z" fill="#191419"/>
+      <path d="M19.3 9.8Q19.732 11.168 21.1 11.6Q19.732 12.032 19.3 13.4Q18.868 12.032 17.5 11.6Q18.868 11.168 19.3 9.8z" fill="#191419"/>
+      <circle cx="26.5" cy="13.4" r="5.5" fill="#191419"/>
+      <circle cx="26.5" cy="13.4" r="3.8" fill="#c41c83"/>
+      <path d="M26.926 11.395L27.154 12.811L28.539 13.186L27.262 13.84L27.334 15.273L26.317 14.261L24.977 14.772L25.625 13.492L24.725 12.375L26.142 12.596z" fill="#ffffff" stroke="#ffffff" stroke-width="0.5" stroke-linejoin="round"/>
+      <circle cx="24.9" cy="19.6" r="4" fill="#191419"/>
+      <circle cx="24.9" cy="19.6" r="2.3" fill="#ffffff"/>
+    </g>
+  </g>
+
+  <!-- the ghost's shadow on the water, so it stands in the scene rather than on top of it -->
+  <ellipse cx="500" cy="824" rx="150" ry="16" fill="#0d0318" opacity="0.55"/>
+
+  <!-- caption -->
+  <rect x="0" y="0" width="1080" height="148" fill="#0c0420" fill-opacity="0.55"/>
+  <rect x="300" y="128" width="480" height="4" fill="#ff2e88"/>
+  <rect x="0" y="828" width="1080" height="252" fill="#0c0420" fill-opacity="0.74"/>
+  <rect x="0" y="828" width="1080" height="4" fill="#ff2e88"/>
+
+  <g class="cap" stroke-linejoin="round" paint-order="stroke" text-anchor="middle">
+    <text x="540" y="96" font-size="46" letter-spacing="3" fill="#ffe9f6" stroke="#0c0420" stroke-width="9">WAITED 13 YEARS FOR GTA 6.</text>
+
+    <text x="540" y="906" font-size="68" letter-spacing="1" fill="#ffffff" stroke="#0c0420" stroke-width="12">MY AGENT GOT PAID</text>
+    <text x="540" y="976" font-size="56" letter-spacing="1" fill="#ffd9ef" stroke="#0c0420" stroke-width="11">BEFORE THE DOWNLOAD FINISHED</text>
+
+    <text x="540" y="1046" font-size="34" letter-spacing="2" fill="#ff8ad0" stroke="#0c0420" stroke-width="7">make.fun · AI agents earn real money</text>
+  </g>
+</svg>
+</body>
+</html>

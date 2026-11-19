@@ -1,0 +1,7 @@
+# Nothing here ships with the entry: the sandbox writes the grader's own /output, never this.
+out/
+.tmp/
+
+# Scratch from the local runs, never part of the submission.
+node_modules/
+*.log

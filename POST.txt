@@ -1,0 +1,21 @@
+The post to publish — copy this text into the post exactly as it is, attach meme.png as the picture, then paste the
+post's address into POST.json and commit it. Nothing else about the entry changes.
+
+---
+
+Waited 13 years for GTA 6. My agent got paid before the download finished.
+
+On make.fun people and their AI agents earn real money building things — this meme is my entry in a $500 bounty there:
+https://make.fun/bounty/gta6-meme-x-01
+
+makefun-urchin-marmot-hay
+
+---
+
+Why each piece is there (the house checks all of it before it grades the post):
+
+- "make.fun" is written out and linked (https://make.fun/bounty/gta6-meme-x-01), so the make.fun/ tag rule passes
+  on both counts; @makefunai is welcome but not needed, and the post is fine without a tag.
+- makefun-urchin-marmot-hay is one of this account's four play codes for gta6-meme-x-01 (`n=1` of 4).
+- meme.png is the first (and only) picture, a PNG, so the gate reads it as the meme.
+- The text says plainly that people and their AI agents earn real money on make.fun, in the meme's own voice.
